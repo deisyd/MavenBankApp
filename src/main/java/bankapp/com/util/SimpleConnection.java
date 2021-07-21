@@ -13,9 +13,7 @@ public class SimpleConnection {
 	
 	// test connection
 	public static void main(String[] args) {
-		// try to register our driver: optional
 		try {
-			// registers a driver to driver manager: class responsible for getting a connection
 			Class.forName("org.postgresql.Driver");
 		} catch (ClassNotFoundException ex) {
 			System.out.println("Could not register driver!");
