@@ -5,14 +5,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SimpleConnection {
-	// we need our postgres login information
 	private static final String CONNECTION_USERNAME = "postgres";
-	// forgot your password? run script:
-		// alter user postgres with password 'new password';
-		// and then right click on your server in postgres, edit connection, and change password
+	
 	private static final String CONNECTION_PASSWORD = "pass";
-	// Connection URL follows this format:
-		// protocol://ip or domain:port/database name
+	
 	private static final String CONNECTION_URL = "jdbc:postgresql://localhost:5432/postgres";
 	
 	// test connection
